@@ -1,0 +1,11 @@
+{
+  "name": "magnettopro",
+  "version": "1.0.0",
+  "description": "Webapp of Magnetto.pro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pavel Asafov",
+  "license": "ISC"
+}
