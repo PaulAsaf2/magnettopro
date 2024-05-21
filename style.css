@@ -1,0 +1,99 @@
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 100 to 900 */
+
+
+
+body {
+  background-color: #b87272;
+  color:#A5F469;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+  "slnt" 0;
+}
+
+.main {
+  background-image: url(./assets/background_main_page.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  outline: 2px solid red;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  padding: 30px 14px 0;
+}
+
+/* GREETING */
+.greeting {
+  height: 65%;
+  padding: 0 14px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.greeting_subtitle_cont {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  padding: 0 0 10px 0;
+}
+
+.greeting_subtitle {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.greeting_title {
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.2;
+  color: white;
+  padding: 0 0 30px 0;
+}
+
+.greeting_title_span {
+  color: #A5F469;
+}
+
+.greeting_btn {
+  width: 100%;
+  background-color: #A5F469;
+  color: #2B293F;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 19px 0;
+  text-align: center;
+}
+/* END GREETING */
+
+.mouse_icon {
+  display: block;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+/* TEXT CAROUSEL */
+.text_carousel_cont {
+  padding: 0 0 14px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.text_carousel {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.separator {
+  padding: 0 10px;
+}
+/* END TEXT CAROUSEL */
