@@ -1,10 +1,8 @@
 /* <uniquifier>: Use a unique and descriptive class name */
 /* <weight>: Use a value from 100 to 900 */
 
-
-
 body {
-  background-color: #b87272;
+  background-color: #474747;
   color:#A5F469;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -32,7 +30,7 @@ body {
 
 /* GREETING */
 .greeting {
-  height: 65%;
+  height: 80%;
   padding: 0 14px 0;
   display: flex;
   flex-direction: column;
@@ -97,3 +95,61 @@ body {
   padding: 0 10px;
 }
 /* END TEXT CAROUSEL */
+
+/* ADVANTAGES */
+.advantages {
+  height: 100vh;
+  background-image: url(./assets/background_main_second_page.png);
+}
+
+.advantages_title {
+  font-size: 24px;
+  color: white;
+  padding: 80px 0 0 42px;
+  line-height: 1.2;
+}
+
+.card {
+  outline: thin dotted red;
+  background-color: #191919;
+  margin: 14% 14px 0;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card_image {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card_title {
+  font-size: 32px;
+  text-align: center;
+  margin: 36px 0 36px 0;
+}
+
+.card_paragraph {
+  font-size: 14px;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.dot_cont {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+/* END ADVANTAGES */
