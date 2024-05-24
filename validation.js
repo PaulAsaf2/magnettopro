@@ -1,6 +1,7 @@
-const form = document.forms[0]
-const inputList = Array.from(form.querySelectorAll('.input'));
-const submit = document.querySelector('.submit')
+import {
+  inputList,
+  submit,
+} from './constants.js'
 
 toggleButtonState()
 

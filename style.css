@@ -27,6 +27,10 @@ body {
   padding: 30px 14px 0;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 .header_close {
   display: flex;
   justify-content: space-between;
@@ -72,7 +76,7 @@ body {
   color: #A5F469;
 }
 
-.greeting_btn {
+.open_form_btn {
   width: 100%;
   background-color: #A5F469;
   color: #2B293F;
@@ -262,10 +266,12 @@ body {
   font-size: 14px;
   font-weight: 500;
   border: none;
+  cursor: pointer;
 }
 
 .submit_disabled {
   background-color: #afafaf;
+  cursor: default;
 }
 /* END FORM */
 
