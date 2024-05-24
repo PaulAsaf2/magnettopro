@@ -239,7 +239,7 @@ body {
   transition: .3s ease;
 }
 
-.input:invalid {
+.input_error {
   outline: .6px solid #cb3a3a;
 }
 
@@ -251,11 +251,15 @@ body {
   color: #707070;
 }
 
-#submit {
+.submit {
   background-color: #A5F469;
   padding: 10px 0;
   font-size: 14px;
   font-weight: 500;
   border: none;
+}
+
+.submit_disabled {
+  background-color: #afafaf;
 }
 /* END FORM */
