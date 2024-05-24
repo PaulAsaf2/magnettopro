@@ -239,6 +239,10 @@ body {
   transition: .3s ease;
 }
 
+.input:invalid {
+  outline: .6px solid #cb3a3a;
+}
+
 .input:focus {
   outline: .6px solid #A5F469;
 }
