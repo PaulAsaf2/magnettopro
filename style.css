@@ -178,9 +178,14 @@ body {
 .form_page {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
   padding: 0 18px;
-  line-height: 1.2;
+}
+
+.form_page_main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  padding-top: 25px;
 }
 
 .form_page_title {
@@ -263,3 +268,36 @@ body {
   background-color: #afafaf;
 }
 /* END FORM */
+
+/* SUCCESS PAGE */
+.success_cont {
+  display: none;
+}
+
+.success_cont_show {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 25px;
+}
+
+.success_icon {
+  width: 89px;
+  height: 63px;
+  margin-bottom: 19px;
+}
+
+.success_title {
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+}
+
+.success_text {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+/* END SUCCESS PAGE */
