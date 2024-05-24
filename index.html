@@ -6,66 +6,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magnetto.pro</title>
   <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-  <link rel="stylesheet" href="normalize.css" type="text/css">
-  <link rel="stylesheet" href="style.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css" type="text/css">
+  <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
-  <main class="main">
-    <header class="header">
-      <img src="./assets/logo.svg" alt="Логотип Magnetto.pro">
-    </header>
-    <section class="greeting">
-      <div class="greeting_subtitle_cont">
-        <img src="./assets/telegram.svg" alt="Логотип Телеграм">
-        <h2 class="greeting_subtitle">Крупнейший селер Telegram Ads</h2>
+
+  <div id="main_page">
+    <main class="main">
+      <header class="header">
+        <img src="./assets/logo.svg" alt="Логотип Magnetto.pro">
+      </header>
+      <section class="greeting">
+        <div class="greeting_subtitle_cont">
+          <img src="./assets/telegram.svg" alt="Логотип Телеграм">
+          <h2 class="greeting_subtitle">Крупнейший селер Telegram Ads</h2>
+        </div>
+        <h1 class="greeting_title">Привлечем <span class="greeting_title_span">клиентов</span> для вашего бизнеса</h1>
+        <button type="button" class="greeting_btn">Обсудить проект</button>
+      </section>
+      <img src="./assets/mouse.svg" alt="Иконка мыши" class="mouse_icon">
+      <div class="text_carousel_cont">
+        <span class="text_carousel">Достигаем ключевых KPI<span class="separator">|</span>Увеличиваем конверсию, объемы
+          заявок и продаж<span class="separator">|</span>Реализуем кампании в любых рекламных системах<span
+            class="separator">|</span>Достигаем ключевых KPI<span class="separator">|</span>Увеличиваем конверсию,
+          объемы
+          заявок и продаж</span>
       </div>
-      <h1 class="greeting_title">Привлечем <span class="greeting_title_span">клиентов</span> для вашего бизнеса</h1>
-      <button type="button" class="greeting_btn">Обсудить проект</button>
+    </main>
+
+    <section class="advantages">
+      <h2 class="advantages_title">Наши преимущества</h2>
+      <div class="card">
+        <img src="./assets/efficiency.png" alt="Знак молнии" class="card_image">
+        <h3 class="card_title">Эффективность</h3>
+        <p class="card_paragraph">Глубоко понимаем актуальные инструменты и достигаем целей х2 быстрее</p>
+      </div>
+      <div class="card">
+        <img src="./assets/cases.png" alt="Изображение элемента пазла" class="card_image">
+        <h3 class="card_title">Кейсы</h3>
+        <p class="card_paragraph">Более 21 000 успешно реализованных проектов</p>
+      </div>
+      <div class="card">
+        <img src="./assets/expertise.png" alt="Изображение ракеты" class="card_image">
+        <h3 class="card_title">Экспертность</h3>
+        <p class="card_paragraph">Первыми запустили рекламу в Telegram Ads, прямой диалог с командой платформы</p>
+      </div>
+      <div class="card">
+        <img src="./assets/proprietary_tools.png" alt="Изображение лампочки" class="card_image">
+        <h3 class="card_title">Собственные инструменты</h3>
+        <p class="card_paragraph">Adstat.pro и Gravity Ads — для аналитики, запуска сотен объявлений, работы с отчетами
+        </p>
+      </div>
+      <div class="dot_cont">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
     </section>
-    <img src="./assets/mouse.svg" alt="Иконка мыши" class="mouse_icon">
-    <div class="text_carousel_cont">
-      <span class="text_carousel">Достигаем ключевых KPI<span class="separator">|</span>Увеличиваем конверсию, объемы
-        заявок и продаж<span class="separator">|</span>Реализуем кампании в любых рекламных системах<span
-          class="separator">|</span>Достигаем ключевых KPI<span class="separator">|</span>Увеличиваем конверсию, объемы
-        заявок и продаж</span>
-    </div>
-  </main>
-  <section class="advantages">
-    <h2 class="advantages_title">Наши преимущества</h2>
-    <div class="card">
-      <img src="./assets/efficiency.png" alt="Знак молнии" class="card_image">
-      <h3 class="card_title">Эффективность</h3>
-      <p class="card_paragraph">Глубоко понимаем актуальные инструменты и достигаем целей х2 быстрее</p>
-    </div>
-    <div class="card">
-      <img src="./assets/cases.png" alt="Изображение элемента пазла" class="card_image">
-      <h3 class="card_title">Кейсы</h3>
-      <p class="card_paragraph">Более 21 000 успешно реализованных проектов</p>
-    </div>
-    <div class="card">
-      <img src="./assets/expertise.png" alt="Изображение ракеты" class="card_image">
-      <h3 class="card_title">Экспертность</h3>
-      <p class="card_paragraph">Первыми запустили рекламу в Telegram Ads, прямой диалог с командой платформы</p>
-    </div>
-    <div class="card">
-      <img src="./assets/proprietary_tools.png" alt="Изображение лампочки" class="card_image">
-      <h3 class="card_title">Собственные инструменты</h3>
-      <p class="card_paragraph">Adstat.pro и Gravity Ads — для аналитики, запуска сотен объявлений, работы с отчетами
-      </p>
-    </div>
-    <div class="dot_cont">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-  </section>
+  </div>
+
+  <div class="form_page_outer_cont">
+    <section class="form_page">
+      <header class="header header_close">
+        <img src="./assets/logo.svg" alt="Логотип Magnetto.pro">
+        <button type="button" class="close_btn"></button>
+      </header>
+      <h1 class="form_page_title">Оставьте заявку и получите:</h1>
+      <div class="form_page_description_cont">
+        <span class="form_page_description_number">1'</span>
+        <h2 class="form_page_description">Аудит рекламных кампаний</h2>
+      </div>
+      <div class="form_page_description_cont">
+        <span class="form_page_description_number">2'</span>
+        <h2 class="form_page_description">Коммерческое предложение</h2>
+      </div>
+      <div class="form_page_description_cont">
+        <span class="form_page_description_number">3'</span>
+        <h2 class="form_page_description">Стратегию продвижения</h2>
+      </div>
+      <form action="" name="proposal" class="form">
+        <input required class="input" type="text" name="name" id="name" placeholder="Имя" autocomplete="off">
+        <input required class="input" type="email" name="email" id="email" placeholder="E-mail" autocomplete="off">
+        <input required class="input" type="text" name="phone" id="phone" placeholder="Телефон" autocomplete="off">
+        <input type="submit" id="submit" value="Отправить">
+      </form>
+      <p class="form_page_concordance">Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+        соглашаетесьс политикой конфиденциальности</p>
+    </section>
+  </div>
 
   <script type="module" src="index.js"></script>
 </body>

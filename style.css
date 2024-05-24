@@ -27,6 +27,17 @@ body {
   padding: 30px 14px 0;
 }
 
+.header_close {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close_btn {
+  background-image: url(./assets/close.svg);
+  width: 15px;
+  height: 15px;
+}
+
 /* GREETING */
 .greeting {
   height: 80%;
@@ -156,3 +167,91 @@ body {
   background-color: #A5F469;
 }
 /* END ADVANTAGES */
+
+/* FORM PAGE */
+.form_page_outer_cont {
+  display: none;
+  background-image: url(./assets/background_main_second_page.png);
+  height: 100vh;
+}
+
+.form_page {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 0 18px;
+  line-height: 1.2;
+}
+
+.form_page_title {
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+}
+
+.form_page_description_cont {
+  background-color: #A5F469;
+  color: #2B293F;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 20px;
+  border-radius: 13px;
+  margin-bottom: -10px;
+}
+
+.form_page_description_cont:last-of-type {
+  margin-bottom: 0;
+}
+
+.form_page_description_number {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.form_page_description {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form_page_concordance {
+  font-size: 12px;
+  text-align: center;
+  color: #CBCBCB;
+  font-weight: 100;
+}
+/* END FORM PAGE */
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.input {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: .6px solid white;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  transition: .3s ease;
+}
+
+.input:focus {
+  outline: .6px solid #A5F469;
+}
+
+.input:placeholder {
+  color: #707070;
+}
+
+#submit {
+  background-color: #A5F469;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+}
+/* END FORM */
