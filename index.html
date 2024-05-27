@@ -20,7 +20,7 @@
 <body>
 
   <div id="main_page">
-    <!-- <main class="main">
+    <main class="main">
       <header class="header">
         <img class="logo" src="./assets/logo.svg" alt="Логотип Magnetto.pro">
       </header>
@@ -62,7 +62,7 @@
           <span class="separator">|</span>
         </span>
       </div>
-    </main> -->
+    </main>
 
     <section class="advantages">
       <h2 class="advantages_title">Наши преимущества</h2>
@@ -86,8 +86,7 @@
           <div class="swiper-slide">
             <img src="./assets/proprietary_tools.png" alt="Изображение лампочки" class="card_image">
             <h3 class="card_title">Собственные инструменты</h3>
-            <p class="card_paragraph">Adstat.pro и Gravity Ads — для аналитики, запуска сотен объявлений, работы с отчетами
-            </p>
+            <p class="card_paragraph">Adstat.pro и Gravity Ads — для аналитики, запуска сотен объявлений, работы с отчетами</p>
           </div>
         </div>
       </div>
@@ -121,7 +120,8 @@
           <input required class="input" type="text" name="name" id="name" placeholder="Имя" autocomplete="off">
           <input required class="input" type="email" name="email" id="email" placeholder="E-mail" autocomplete="off">
           <input required class="input" type="text" name="phone" id="phone" placeholder="Телефон" autocomplete="off">
-          <input required class="input" type="text" name="telegram" id="telegram" placeholder="Никнейм Телеграм" autocomplete="off">
+          <input required class="input" type="text" name="telegram" id="telegram" placeholder="Никнейм Телеграм"
+            autocomplete="off">
           <input type="submit" class="submit" value="Отправить">
         </form>
         <p class="form_page_concordance">Нажимая на кнопку, вы даете согласие на обработку персональных данных и
@@ -136,8 +136,20 @@
 
     </section>
   </div>
-  
-  <script type="module" src="swiper.js"></script>
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+    const swiper = new Swiper('.swiper', {
+      direction: 'horizontal',
+      loop: true,
+
+      pagination: {
+        el: '.swiper-pagination',
+        bulletClass: 'swiper-pagination-bullet',
+        bulletActiveClass: 'swiper-pagination-bullet-active',
+        clickable: true,
+      },
+    });
+  </script>
   <script type="module" src="index.js"></script>
   <script type="module" src="validation.js"></script>
 </body>

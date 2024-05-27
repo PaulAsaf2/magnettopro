@@ -130,12 +130,13 @@ body {
   height: 100vh;
   background-image: url(./assets/background_main_second_page.png);
   margin: 0 14px;
+  position: relative;
 }
 
 .advantages_title {
   font-size: 24px;
   color: white;
-  padding: 80px 0 0 42px;
+  padding: 80px 0 32px 42px;
   line-height: 1.2;
 }
 
@@ -161,10 +162,6 @@ body {
 
 /* SWIPER */
 
-.swiper {
-  position: relative;
-}
-
 .swiper-slide {
   background-color: #191919;
   min-height: 400px;
@@ -174,7 +171,7 @@ body {
 }
 
 .swiper-pagination {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .swiper-pagination-bullet {

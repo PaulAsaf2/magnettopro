@@ -1,5 +1,3 @@
-const dots = document.querySelectorAll('.dot')
-const cards = document.querySelectorAll('.card')
 const openFormBtn = document.querySelector('.open_form_btn')
 const mainPage = document.getElementById('main_page')
 const formPage = document.querySelector('.form_page_outer_cont')
@@ -13,8 +11,6 @@ const logos = Array.from(document.querySelectorAll('.logo'))
 const tg = window.Telegram.WebApp
 
 export {
-  dots,
-  cards,
   openFormBtn,
   mainPage,
   formPage,
