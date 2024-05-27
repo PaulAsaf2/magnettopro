@@ -1,6 +1,4 @@
 import {
-  dots,
-  cards,
   openFormBtn,
   mainPage,
   formPage,
@@ -14,20 +12,6 @@ import {
 import { sendData } from './api.js'
 
 tg.expand()
-showCards(0)
-
-fetch('https://bitrix.magnetto.pro/rest/381/80gybht7e43gzxpr/crm.lead.fields')
-  .then(res => res.json())
-  .then(data => console.log(data))
-  .catch(err => console.error(err))
-
-function showCards(index) {
-  cards.forEach(card => card.style.display = 'none')
-  dots.forEach(dot => dot.classList.remove('active'))
-
-  cards[index].style.display = 'flex'
-  dots[index].classList.add('active')
-}
 
 function openFormPage() {
   mainPage.style.display = 'none'
@@ -54,9 +38,6 @@ function submitForm(event) {
     })
 }
 
-dots.forEach((dot, index) => {
-  dot.addEventListener('click', () => showCards(index))
-})
 logos.forEach(img => {
   img.addEventListener('click', closePage)
 })
