@@ -1,16 +1,26 @@
 /* <uniquifier>: Use a unique and descriptive class name */
 /* <weight>: Use a value from 100 to 900 */
 
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
 body {
   background-color: #191919;
   background-image: url(./assets/background_main_second_page.png);
-  color:#A5F469;
+  color: #A5F469;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings:
-  "slnt" 0;
+    "slnt" 0;
 }
 
 .main {
@@ -86,6 +96,7 @@ body {
   padding: 19px 0;
   text-align: center;
 }
+
 /* END GREETING */
 
 .mouse_icon {
@@ -104,11 +115,13 @@ body {
 .text_carousel {
   display: inline-block;
   font-size: 12px;
+  animation: marquee 20s linear infinite;
 }
 
 .separator {
   padding: 0 10px;
 }
+
 /* END TEXT CAROUSEL */
 
 /* ADVANTAGES */
@@ -168,9 +181,11 @@ body {
   transition: background-color 0.6s ease;
 }
 
-.dot:hover, .active {
+.dot:hover,
+.active {
   background-color: #A5F469;
 }
+
 /* END ADVANTAGES */
 
 /* FORM PAGE */
@@ -229,6 +244,7 @@ body {
   font-weight: 100;
   padding-bottom: 42px;
 }
+
 /* END FORM PAGE */
 
 /* FORM */
@@ -273,6 +289,7 @@ body {
   background-color: #afafaf;
   cursor: default;
 }
+
 /* END FORM */
 
 /* SUCCESS PAGE */
@@ -281,7 +298,6 @@ body {
 }
 
 .success_cont_show {
-  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -306,4 +322,5 @@ body {
   line-height: 1.2;
   text-align: center;
 }
+
 /* END SUCCESS PAGE */
