@@ -2,7 +2,8 @@
 /* <weight>: Use a value from 100 to 900 */
 
 body {
-  background-color: #474747;
+  background-color: #191919;
+  background-image: url(./assets/background_main_second_page.png);
   color:#A5F469;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -175,8 +176,6 @@ body {
 /* FORM PAGE */
 .form_page_outer_cont {
   display: none;
-  background-image: url(./assets/background_main_second_page.png);
-  height: 100vh;
 }
 
 .form_page {
@@ -228,6 +227,7 @@ body {
   text-align: center;
   color: #CBCBCB;
   font-weight: 100;
+  padding-bottom: 42px;
 }
 /* END FORM PAGE */
 
