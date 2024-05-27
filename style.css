@@ -24,7 +24,7 @@ body {
 }
 
 .main {
-  background-image: url(./assets/background_main_page.png);
+  background-image: url(./assets/background_main_page_without_circle.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top right;
