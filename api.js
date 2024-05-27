@@ -4,12 +4,15 @@ export function sendData() {
   const name = inputList[0].value
   const email = inputList[1].value
   const phone = inputList[2].value
+  const telegram = inputList[3].value
   const url = 'https://bitrix.magnetto.pro/rest/381/80gybht7e43gzxpr/crm.lead.add'
   const data = {
     fields: {
+      TITLE: 'Лид из бота webapp',
       NAME: name,
       EMAIL: [{ VALUE: email }],
       PHONE: [{ VALUE: phone }],
+      COMMENTS: `Ник Telegram: ${telegram}`,
     }
   }
   const params = {

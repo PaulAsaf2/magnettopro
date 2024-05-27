@@ -10,6 +10,7 @@ const inputList = Array.from(form.querySelectorAll('.input'));
 const closePageBtn = document.querySelector('.close_btn')
 const submit = document.querySelector('.submit')
 const logos = Array.from(document.querySelectorAll('.logo'))
+const tg = window.Telegram.WebApp
 
 export {
   dots,
@@ -24,4 +25,5 @@ export {
   closePageBtn,
   submit,
   logos,
+  tg,
 }

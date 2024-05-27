@@ -9,10 +9,17 @@ import {
   form,
   closePageBtn,
   logos,
+  tg,
 } from './constants.js'
 import { sendData } from './api.js'
 
+tg.expand()
 showCards(0)
+
+fetch('https://bitrix.magnetto.pro/rest/381/80gybht7e43gzxpr/crm.lead.fields')
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err))
 
 function showCards(index) {
   cards.forEach(card => card.style.display = 'none')
