@@ -2,16 +2,22 @@ import {
   openFormBtn,
   mainPage,
   formPage,
+  formSection,
   successPage,
   formPageMain,
   form,
   closePageBtn,
   logos,
   tg,
+  errorSendingMessage,
 } from './constants.js'
 import { sendData } from './api.js'
 
 tg.expand()
+
+if (tg.platform == 'ios') {
+  formSection.style.height = '140vh'
+}
 
 function openFormPage() {
   mainPage.style.display = 'none'
@@ -34,7 +40,7 @@ function submitForm(event) {
     .then(() => showSuccessPage())
     .catch((err) => {
       console.error(err)
-      alert('Произошла ошибка при отправке данных. Пожалуйста, попробуйте еще раз.')
+      alert(errorSendingMessage)
     })
 }
 
