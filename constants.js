@@ -4,6 +4,7 @@ const formPage = document.querySelector('.form_page_outer_cont')
 const formSection = document.querySelector('.form_page')
 const successPage = document.querySelector('.success_cont')
 const formPageMain = document.querySelector('.form_page_main')
+const textCarouselCont = document.querySelector('.text_carousel_cont')
 const form = document.forms[0]
 const inputList = Array.from(form.querySelectorAll('.input'));
 const closePageBtn = document.querySelector('.close_btn')
@@ -26,4 +27,5 @@ export {
   logos,
   tg,
   errorSendingMessage,
+  textCarouselCont,
 }

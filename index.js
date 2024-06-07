@@ -10,6 +10,7 @@ import {
   logos,
   tg,
   errorSendingMessage,
+  textCarouselCont,
 } from './constants.js'
 import { sendData } from './api.js'
 
@@ -17,6 +18,7 @@ tg.expand()
 
 if (tg.platform == 'ios') {
   formSection.style.height = '140vh'
+  textCarouselCont.style.padding = '0 0 30px 0'
 }
 
 function openFormPage() {
