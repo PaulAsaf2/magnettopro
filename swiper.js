@@ -1,5 +1,5 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
-    
+import Swiper from "./node_modules/swiper-master/dist/swiper-bundle.min.mjs";
+
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
