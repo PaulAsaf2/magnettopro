@@ -37,6 +37,7 @@ function closePage() {
 
 function submitForm(event) {
   event.preventDefault()
+  ym(97540611, 'reachGoal', 'form-submit')
 
   sendData()
     .then(() => showSuccessPage())
