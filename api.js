@@ -13,6 +13,7 @@ export function sendData() {
       EMAIL: [{ VALUE: email }],
       PHONE: [{ VALUE: phone }],
       COMMENTS: `Ник Telegram: ${telegram}`,
+      UTM_SOURCE: 'tg_bot',
     }
   }
   const params = {
