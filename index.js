@@ -37,14 +37,15 @@ function closePage() {
 
 function submitForm(event) {
   event.preventDefault()
-  ym(97540611, 'reachGoal', 'form-submit')
 
-  sendData()
-    .then(() => showSuccessPage())
-    .catch((err) => {
-      console.error(err)
-      alert(errorSendingMessage)
-    })
+  ym(97540611, 'reachGoal', 'form-submit', {}, function () {
+    sendData()
+      .then(() => showSuccessPage())
+      .catch((err) => {
+        console.error(err)
+        alert(errorSendingMessage)
+      })
+  })
 }
 
 logos.forEach(img => {
