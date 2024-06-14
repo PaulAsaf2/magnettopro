@@ -255,10 +255,12 @@ body {
   row-gap: 25px;
 }
 
-.input {
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: rgba(0, 0, 0, 0);
-  border: none;
-  outline: .6px solid white;
+  border: .6px solid white;
   padding: 10px;
   color: white;
   font-size: 14px;
@@ -266,11 +268,13 @@ body {
 }
 
 .input_error {
-  outline: .6px solid #cb3a3a;
+  border: .6px solid #cb3a3a;
 }
 
 .input:focus {
-  outline: .6px solid #A5F469;
+  outline: none;
+  box-shadow: none;
+  border: .6px solid #A5F469;
 }
 
 .input:placeholder {
