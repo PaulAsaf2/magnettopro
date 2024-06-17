@@ -11,10 +11,16 @@ import {
   tg,
   errorSendingMessage,
   textCarouselCont,
+  inputList,
+  tgUserFirstName,
+  tgUserLastName,
+  tgUsername,
 } from './constants.js'
 import { sendData } from './api.js'
+import { isValid, toggleButtonState } from './validation.js'
 
 tg.expand()
+toggleButtonState()
 
 if (tg.platform == 'ios') {
   formSection.style.height = '140vh'
@@ -48,10 +54,16 @@ function submitForm(event) {
   })
 }
 
-logos.forEach(img => {
-  img.addEventListener('click', closePage)
-})
+inputList[0].value = tgUserFirstName + ' ' + tgUserLastName
+inputList[3].value = tgUsername
+
+logos.forEach(img => img.addEventListener('click', closePage))
 openFormBtn.addEventListener('click', openFormPage)
 form.addEventListener('submit', submitForm)
 closePageBtn.addEventListener('click', closePage)
-
+inputList.forEach((input) => {
+  input.addEventListener('input', () => {
+    isValid(input)
+    toggleButtonState()
+  });
+});

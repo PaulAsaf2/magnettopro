@@ -3,9 +3,7 @@ import {
   submit,
 } from './constants.js'
 
-toggleButtonState()
-
-function isValid(input) {
+export function isValid(input) {
   if (!input.validity.valid) {
     input.classList.add('input_error');
   } else {
@@ -17,7 +15,7 @@ function hasInvalidInput() {
   return inputList.some(input => !input.validity.valid)
 }
 
-function toggleButtonState() {
+export function toggleButtonState() {
   if (hasInvalidInput()) {
     submit.classList.add('submit_disabled')
     submit.disabled = true
@@ -26,10 +24,3 @@ function toggleButtonState() {
     submit.disabled = false
   }
 }
-
-inputList.forEach((input) => {
-  input.addEventListener('input', () => {
-    isValid(input)
-    toggleButtonState()
-  });
-});
