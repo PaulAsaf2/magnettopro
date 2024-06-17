@@ -11,6 +11,7 @@ const closePageBtn = document.querySelector('.close_btn')
 const submit = document.querySelector('.submit')
 const logos = Array.from(document.querySelectorAll('.logo'))
 const tg = window.Telegram.WebApp
+const tgUserId = tg.initDataUnsafe.user.id
 const errorSendingMessage = 'Произошла ошибка при отправке данных. Пожалуйста, попробуйте еще раз.'
 
 export {
@@ -28,4 +29,5 @@ export {
   tg,
   errorSendingMessage,
   textCarouselCont,
+  tgUserId,
 }
